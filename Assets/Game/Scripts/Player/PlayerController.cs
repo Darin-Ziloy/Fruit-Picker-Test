@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxVerticalAngle = 90f;
 
     [Header("Smoothing Settings")]
-    [SerializeField] private float smoothTime = 0.12f;  // Adjust for desired smoothing
+    [SerializeField] private float smoothTime = 0.12f;
 
     private IMobileInput _mobileInput;
     private Vector3 _velocity;
@@ -29,7 +29,6 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 _currentCameraVelocity;
     private Vector2 _targetCameraRotation;
-
 
     [Inject]
     public void Construct(IMobileInput mobileInput)
